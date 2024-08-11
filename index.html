@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./assets/img/Logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Challenge Encriptador de texto</title>
+</head>
+<body>
+    <main>
+        <section class="content__one">
+            <div class="content__one__logo">
+                <img class="logo___principal" src="./assets/img/Logo.svg" alt="Logo Empresa" >
+                <img class="logo__secundario" src="./assets/img/LogoRecord.png" alt="Logo Empresa">
+            </div>
+
+            <div class="process">
+                <textarea id="textPalabra" class="menssage" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="process__infor">
+                    <div class="information">
+                        <img src="./assets/img/bi_exclamation-circle-fill.svg">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="process__button">
+                        <button class="encryption" onclick="encriptar()">Encriptar</button>
+                        <button class="decryption" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content__two">
+            <div class="result__content">
+                <div id="no__message" class="no__message">
+                    <img src="./assets/img/Muñeco.svg" alt="">
+                    <div class="description__menssage">
+                        <h2>
+                            Ningún mensaje fue encontrado
+                        </h2>
+                        <p>
+                            Ingresa el texto que desees encriptar o desencriptar.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="result__menssage" class="result__menssage">
+                    <p id="menssage__result"></p>
+                    <button onclick="copiarTexto()" class="copy">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
